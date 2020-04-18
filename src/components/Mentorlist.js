@@ -1,5 +1,6 @@
 import React from 'react'
 import placeholder from '../img/placeholder.png'
+import LazyLoad from 'react-lazy-load'
 
 const Mentorlist = ({ mentors }) => {
 
@@ -17,6 +18,8 @@ const Mentorlist = ({ mentors }) => {
                     return(
                     <div className="mentorList_card" key={mentor.id}>
                         <div className="mentorCard_pic">
+                        <LazyLoad height={500} offsetVertical={1500}>
+                            <>
                             <img height="300px" width="360px" src={getMentorPic(mentor)} alt="" />
                             <div className="mentorCard_title">
                                 Title: {mentor.title}
@@ -27,6 +30,8 @@ const Mentorlist = ({ mentors }) => {
                             <div className="mentorCard_description">
                                 Description: {mentor.description}
                             </div>
+                            </>
+                        </LazyLoad>
                         </div>
                     </div>
                     )

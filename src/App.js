@@ -12,7 +12,7 @@ function App() {
       const getMentors = async () => {
           try{
               const response = await axios.get('https://codesydney-mentors.herokuapp.com/api/v1/mentors')
-              console.log(response.data.data.mentors)
+              //console.log(response.data.data.mentors)
               setMentors(response.data.data.mentors)
               setLoading(false)
           }
