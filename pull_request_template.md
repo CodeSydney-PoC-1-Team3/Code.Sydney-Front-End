@@ -11,9 +11,9 @@ Why are you making this change? Describe the original problems — technical and
 
 - Add a screenshot or two of your changes, where applicable.
 
-## Task Name
+## Issue Name
 
-- Task name from Notion
+- Issue name from github Issues
 
 
 ## Linting Checklist
